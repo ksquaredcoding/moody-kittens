@@ -25,6 +25,9 @@ function addKitten(event) {
   }
 
   if (form.name.value == "") { alert("You've got to name your kitten!") }
+  else if (form.name.value === kittens.includes(form.name.value)) {
+    alert("Kitten already exists! Try a different name.")
+  }
 
   else {
 
